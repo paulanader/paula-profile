@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   background-image: linear-gradient(
     to bottom,
-    #f3f2ef 70%,
-    rgba(243, 242, 239, 0.5)
+    #ffffff 70%,
+    rgba(255, 255, 255, 0.5)
   );
-  margin-bottom: 10px;
   position: fixed;
   width: 100%;
   position: fixed;

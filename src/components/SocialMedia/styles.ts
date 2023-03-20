@@ -6,11 +6,11 @@ export const LinkDecoration = styled.a`
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: var(--blue);
+  background-color: transparent;
   text-decoration: none;
-  color: var(--white);
+  color: white;
   &:hover {
-    color: var(--white);
+    color: white;
     transform: scale(1.15);
     z-index: 1;
     box-shadow: 0 0 5px var(--color-gray);

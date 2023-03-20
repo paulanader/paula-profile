@@ -1,10 +1,20 @@
 import styled from "styled-components";
 
+export const PersonalCard = styled.section`
+  background-color: var(--color-purple);
+  margin-top: 4rem;
+`;
+
+export const ContentCard = styled.div`
+  background-color: var(--color-purple);
+  width: 100%;
+`;
+
 export const Cover = styled.div`
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 `;
 
 export const Title = styled.h1`
@@ -22,12 +32,4 @@ export const Span = styled.p`
 
 export const Alignment = styled.div`
   color: red;
-  /* @media (min-width: 320px) {
-    align-items: start;
-    margin-top: 20px;
-  }
-  @media (min-width: 1400px) {
-    align-items: center;
-    justify-content: center;
-  } */
 `;

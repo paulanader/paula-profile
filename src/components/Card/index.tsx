@@ -1,27 +1,11 @@
-import { Container, Cover, LinkStyle } from "./styles";
+import { CardStyles, WrapperMarker } from "./styles";
 
-interface CardProps {
-  image: string;
-  companyTitle: string;
-  link: string;
-  jobTitle: string;
-}
-
-export const Card: React.FC<CardProps> = ({
-  image,
-  companyTitle,
-  link,
-  jobTitle,
-}) => {
+export const Card = () => {
   return (
-    <Container className="card">
-      <Cover style={{ backgroundImage: `url(${image})` }} />
-      <div className="card-body">
-        <p>{jobTitle}</p>
-        <LinkStyle to={link} className="stretched-link">
-          {companyTitle}
-        </LinkStyle>
-      </div>
-    </Container>
+    <WrapperMarker>
+      <CardStyles>
+        <h1>Test</h1>
+      </CardStyles>
+    </WrapperMarker>
   );
 };

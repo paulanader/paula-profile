@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Line, Title, UnderLine } from "./styles";
+import { Title, UnderLine } from "./styles";
 
 interface INavProp {
   value: string;
@@ -11,7 +11,7 @@ export const Navbar: React.FC<INavProp> = ({ value, id }) => {
   const [selected, setSelected] = useState(false);
   const closeMenu = () => setClick(!click);
   return (
-    <Line
+    <li
       className={`nav-item me-3 py-1 ${selected === true ? "selected" : ""}`}
       onClick={() => setSelected(true)}
     >
@@ -26,6 +26,6 @@ export const Navbar: React.FC<INavProp> = ({ value, id }) => {
       >
         <Title>{value}</Title>
       </UnderLine>
-    </Line>
+    </li>
   );
 };

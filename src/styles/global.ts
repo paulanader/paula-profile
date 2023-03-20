@@ -2,11 +2,20 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-    --color-white: #f3f2ef;
+    --color-white: #ffffff;
     --color-light: #7b7b7b;
     --color-blue: #0966c2;
     --color-pearl: #aa9679;
+    --color-dark: #231f20;
+    --color-gray: #c8c8c8;
+    --color-purple: #660746;
     }
+
+    @font-face {
+        font-family: 'Gilmer';
+        src: local('Gilmer'), url(./fonts/Gilmer/gilmer-light.otf) format('truetype');
+    }
+
     html, body, #root {
         min-height: 100vh;
     }
@@ -15,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--color-white);
     }
     body,input, textarea, button {
-        font-family: 'Montserrat';
+        font-family: 'Gilmer';
     }   
     button {
         cursor: pointer;
@@ -23,16 +32,6 @@ export const GlobalStyle = createGlobalStyle`
     [disabled] {
         opacity: 0.6;
         cursor: not-allowed;
-    }
-
-    label {
-        font-size: 0.7rem;
-    }
-    .error {
-        position: absolute;
-        color: var(--color-red);
-        font-size: 0.9rem;
-        font-weight: bold;
     }
     .cursor-pointer { cursor: pointer; }
 `;

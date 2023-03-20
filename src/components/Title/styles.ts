@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
 export const TitleStyle = styled.div`
-  border-left: 4px solid var(--color-pearl);
+  h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+`;
+
+export const Underline = styled.div`
+  height: 5px;
+  width: 100px;
+  background-color: var(--color-gray);
 `;
