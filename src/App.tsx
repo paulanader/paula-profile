@@ -1,3 +1,4 @@
+import { LanguageProvider } from "./hooks/LanguageProvider";
 import { PagesRoutes } from "./Routes";
 import { GlobalStyle } from "./styles/global";
 
@@ -5,7 +6,9 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <PagesRoutes />
+      <LanguageProvider>
+        <PagesRoutes />
+      </LanguageProvider>
     </>
   );
 };

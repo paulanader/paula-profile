@@ -1,8 +1,16 @@
+import Config from "../../Config";
+import { ColorFooter, Signature } from "./styles";
+
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-auto text-center mb-3">
-      <span>Paula Nader</span>
-    </footer>
+    <ColorFooter className="mt-auto text-center">
+      <span className="text-white">
+        site por{" "}
+        <Signature target="_blanc" to={`${Config.social.linkedin}`}>
+          Paula Nader
+        </Signature>
+      </span>
+    </ColorFooter>
   );
 };
 

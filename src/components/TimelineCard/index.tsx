@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import { ContainerCard } from "./styles";
+import { CardContent, ContainerCard } from "./styles";
 
 interface TimelineCardProps {
   period: string;
@@ -7,14 +7,14 @@ interface TimelineCardProps {
 
 const TimelineCard: React.FC<TimelineCardProps> = ({ period }) => {
   return (
-    <ContainerCard>
-      <Card>
-        <Card.Body>
+    <ContainerCard className="rounded">
+      <CardContent className="text-white fw-bold">
+        <Card.Body className="border-none">
           <Card.Text className="d-flex justify-content-center">
             {period}
           </Card.Text>
         </Card.Body>
-      </Card>
+      </CardContent>
     </ContainerCard>
   );
 };

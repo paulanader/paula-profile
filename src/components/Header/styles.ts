@@ -20,7 +20,6 @@ export const List = styled.ul`
 
   @media (min-width: 320px) {
     align-items: start;
-    margin-top: 15px;
   }
   @media (min-width: 1400px) {
     align-items: center;

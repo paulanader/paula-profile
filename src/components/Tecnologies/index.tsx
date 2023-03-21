@@ -8,49 +8,60 @@ import GitHubImg from "../../assets/gitHub.jpeg";
 import TypescriptImg from "../../assets/typescript.jpeg";
 import ApiRestImg from "../../assets/api.png";
 import FigmaImg from "../../assets/figma.png";
-import SassImg from "../../assets/sass.png";
 import { Title } from "../Title";
 import { PillCard } from "../PillCard";
+import { Col, Row } from "react-bootstrap";
 
 export const Tecnologies = () => {
   return (
     <section id="tecnologies" className="mt-5">
       <Title title="Tecnologies" />
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
-        <div className="col">
+      <h3 className="d-flex justify-content-center mb-5">Front-end</h3>
+      <Row
+        xs={1}
+        md={2}
+        lg={3}
+        className="justify-content-center g-4 justify-content-center mb-3"
+      >
+        <Col>
           <PillCard image={HtmlImg} title="HTML" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={JavascriptImg} title="Javascript" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={CssImg} title="CSS" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={ReactImg} title="React" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={TypescriptImg} title="Typescript" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={ApiRestImg} title="Api Rest" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={JestImg} title="Jest" />
-        </div>
-        <div className="col">
-          <PillCard image={SassImg} title="Sass" />
-        </div>
-        <div className="col">
+        </Col>
+      </Row>
+      <h3 className="d-flex justify-content-center mb-5">Outros</h3>
+      <Row
+        xs={1}
+        md={2}
+        lg={3}
+        className="justify-content-center g-4 justify-content-center mb-3"
+      >
+        <Col>
           <PillCard image={GitImg} title="Git" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={GitHubImg} title="GitHub" />
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <PillCard image={FigmaImg} title="Figma" />
-        </div>
-      </div>
+        </Col>
+      </Row>
     </section>
   );
 };

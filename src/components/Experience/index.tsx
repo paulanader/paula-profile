@@ -22,7 +22,7 @@ export const Experience = () => {
             period="2022 - 2023"
           />
         </Border>
-        <Col className="d-sm-none d-lg-flex">
+        <Col className="d-none d-lg-flex">
           <TimelineCard period="2022 - 2023" />
         </Col>
 
@@ -39,7 +39,7 @@ export const Experience = () => {
             period="fev, 2022 - ago, 2022"
           />
         </Border>
-        <Col className="d-sm-none d-lg-flex">
+        <Col className="d-none d-lg-flex">
           <TimelineCard period="feb, 2022 - ago, 2022" />
         </Col>
 
@@ -56,7 +56,7 @@ export const Experience = () => {
             period="2018 - 2022"
           />
         </Border>
-        <Col className="d-sm-none d-lg-flex">
+        <Col className="d-none d-lg-flex">
           <TimelineCard period="2018 - 2022" />
         </Col>
       </Row>

@@ -14,5 +14,6 @@ export const UnderLine = styled(Link)`
 
   &:hover {
     text-decoration: underline 1.5px var(--color-dark);
+    color: var(--color-dark);
   }
 `;

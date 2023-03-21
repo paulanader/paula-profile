@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap";
-import { About } from "../../components/About";
 import { Contact } from "../../components/Contact";
 import { Education } from "../../components/Education";
 import { Experience } from "../../components/Experience";
@@ -20,7 +19,6 @@ export const Home = () => {
         <Experience />
         <Projects />
         <Education />
-        <About />
         <Contact />
       </Container>
       <Footer />

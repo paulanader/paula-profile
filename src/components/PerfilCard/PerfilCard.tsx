@@ -23,7 +23,7 @@ const PerfilCard = () => {
         Front-end
         <br /> developer
       </SubTitle>
-      <div className="mt-auto">
+      <div className="mt-auto mb-3">
         <Span>Florianópolis, Santa Catarina, Brazil</Span>
         <Alignment className="d-flex align-items-center text-dark">
           {Config.social.linkedin && (
@@ -50,7 +50,7 @@ const PerfilCard = () => {
               <SocialMedia
                 icon={<GrGithub />}
                 link={Config.social.github}
-                title="Whatsapp"
+                title="Github"
               />
             </div>
           )}

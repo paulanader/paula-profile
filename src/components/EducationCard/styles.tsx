@@ -4,8 +4,6 @@ export const Container = styled.div`
   border: transparent;
   box-shadow: 0 0 5px var(--color-pearl);
   width: 100%;
-  border: transparent;
-  box-shadow: 0 0 5px var(--color-pearl);
 `;
 
 export const Cover = styled.div`

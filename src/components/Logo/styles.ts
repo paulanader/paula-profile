@@ -6,6 +6,11 @@ export const Title = styled(Link)`
   color: var(--color-black);
   cursor: pointer;
 
+  :hover {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
   h1 {
     font-weight: 900;
     line-height: 0.05rem;
