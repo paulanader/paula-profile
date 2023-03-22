@@ -1,3 +1,3 @@
 export type LanguageType = {
-  language: "PT" | "EN";
+  language: "BR" | "US";
 };

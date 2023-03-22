@@ -5,13 +5,16 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 import Config from "../../Config";
+import { useLanguage } from "../../hooks/LanguageProvider";
 import { ContactCard } from "../ContactCard";
 import { Title } from "../Title";
 
 export const Contact = () => {
+  const { language } = useLanguage();
+
   return (
     <section id="contact" className="mt-5">
-      <Title title="Contact" />
+      <Title title={language === "US" ? "Contact" : "Contato"} />
       <div className="d-flex justify-content-center">
         <div>
           <ContactCard icon={<AiOutlineMail />} label="paulampaan@gmail.com" />

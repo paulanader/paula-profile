@@ -40,3 +40,14 @@ export const Border = styled(Col)`
     }
   }
 `;
+
+export const Dots = styled.div`
+  width: 10px;
+  height: 50px;
+  position: relative;
+  border-left: 3px dotted black;
+
+  @media (max-width: 992px) {
+    margin-left: -11px;
+  }
+`;

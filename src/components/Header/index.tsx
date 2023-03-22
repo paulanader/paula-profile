@@ -2,16 +2,15 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { HeaderContainer, List } from "./styles";
 import { Navbar } from "../Navbar";
 import Logo from "../Logo";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useLanguage } from "../../hooks/LanguageProvider";
+import { CountryButton } from "../CountryButton";
 
 export const Header: React.FC = () => {
   const { language, getLanguage } = useLanguage();
 
-  console.log({ language });
-
   return (
-    <HeaderContainer className="py-1">
+    <HeaderContainer>
       <Container>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
@@ -36,48 +35,44 @@ export const Header: React.FC = () => {
               <div className="d-md-flex aling-items-center">
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
-                    value={language === "EN" ? "Home" : "Início"}
+                    value={language === "US" ? "Home" : "Início"}
                     id="home"
                   />
                 </List>
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
-                    value={language === "EN" ? "Tecnologies" : "Tecnologias"}
+                    value={language === "US" ? "Tecnologies" : "Tecnologias"}
                     id="tecnologies"
                   />
                 </List>
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
-                    value={language === "EN" ? "Experience" : "Experiência"}
+                    value={language === "US" ? "Experience" : "Experiência"}
                     id="experience"
                   />
                 </List>
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
-                    value={language === "EN" ? "Projects" : "Projetos pessoais"}
+                    value={language === "US" ? "Projects" : "Projetos pessoais"}
                     id="projects"
                   />
                 </List>
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
-                    value={language === "EN" ? "Education" : "Educação"}
+                    value={language === "US" ? "Education" : "Educação"}
                     id="education"
                   />
                 </List>
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
-                    value={language === "EN" ? "Contact" : "Contato"}
+                    value={language === "US" ? "Contact" : "Contato"}
                     id="contact"
                   />
                 </List>
               </div>
-              <div className="d-flex align-items-center gap-3">
-                <Button type="button" onClick={() => getLanguage("PT")}>
-                  Português
-                </Button>
-                <Button type="button" onClick={() => getLanguage("EN")}>
-                  Inglês
-                </Button>
+              <div className="d-flex align-items-center">
+                <CountryButton country={"BR"} changeLanguage={getLanguage} />
+                <CountryButton country={"US"} changeLanguage={getLanguage} />
               </div>
             </div>
           </div>

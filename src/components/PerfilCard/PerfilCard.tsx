@@ -2,6 +2,7 @@ import { memo } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
 import Config from "../../Config";
+import { useLanguage } from "../../hooks/LanguageProvider";
 import { SocialMedia } from "../SocialMedia";
 import {
   Alignment,
@@ -13,18 +14,28 @@ import {
 } from "./styles";
 
 const PerfilCard = () => {
+  const { language } = useLanguage();
+  const country = language === "US" ? "Brazil" : "Brasil";
+
   return (
     <ContentCard className="d-flex flex-column">
       <div style={{ marginBottom: "10%" }}>
         <Title>Paula Nader</Title>
         <UnderLine />
       </div>
-      <SubTitle className="d-flex text-center align-self-center">
-        Front-end
-        <br /> developer
-      </SubTitle>
+      {language === "US" ? (
+        <SubTitle className="d-flex text-center align-self-center">
+          Front-end
+          <br /> developer
+        </SubTitle>
+      ) : (
+        <SubTitle className="d-flex text-center align-self-center">
+          Desenvolvedora
+          <br /> front-end
+        </SubTitle>
+      )}
       <div className="mt-auto mb-3">
-        <Span>Florianópolis, Santa Catarina, Brazil</Span>
+        <Span>Florianópolis, Santa Catarina, {country}</Span>
         <Alignment className="d-flex align-items-center text-dark">
           {Config.social.linkedin && (
             <div className="me-2">

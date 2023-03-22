@@ -3,9 +3,9 @@ import React from "react";
 import { createContext, useContext, useMemo, useState } from "react";
 
 interface ILanguageContextProp {
-  language: "PT" | "EN";
+  language: "BR" | "US";
   isLoading: boolean;
-  getLanguage: (language: "PT" | "EN") => void;
+  getLanguage: (language: "BR" | "US") => void;
 }
 
 interface ILanguageProviderProps {
@@ -29,18 +29,18 @@ export const useLanguage = (): ILanguageContextProp => {
 export const LanguageProvider: React.FC<ILanguageProviderProps> = ({
   children,
 }) => {
-  const [language, setLanguage] = useState<"PT" | "EN">("PT");
+  const [language, setLanguage] = useState<"BR" | "US">("BR");
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const getLanguage = async (language: "PT" | "EN") => {
+  const getLanguage = async (language: "BR" | "US") => {
     setIsLoading(true);
 
     try {
-      if (language === "PT") {
-        setLanguage("PT");
+      if (language === "BR") {
+        setLanguage("BR");
       } else {
-        setLanguage("EN");
+        setLanguage("US");
       }
 
       setIsLoading(false);

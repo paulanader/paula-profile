@@ -16,7 +16,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({
     <Container className="card w-100 p-3 mb-4">
       {route && (
         <LinkCard
-          className="d-flex align-items-center gap-2"
+          className="d-flex align-items-center gap-2 justify-content-center"
           to={route}
           target="_blank"
         >
@@ -25,7 +25,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({
         </LinkCard>
       )}
       {!route && (
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 justify-content-center">
           {icon}
           <Title className="align-items-center d-flex">{label}</Title>
         </div>

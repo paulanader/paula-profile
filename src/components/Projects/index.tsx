@@ -7,11 +7,14 @@ import VehicleImage from "../../assets/Vehicle.jpeg";
 import MaricaImage from "../../assets/Marica.jpeg";
 import StarWarsImage from "../../assets/StarWars.jpeg";
 import GiuliannaImage from "../../assets/Adv.jpeg";
+import { useLanguage } from "../../hooks/LanguageProvider";
 
 export const Projects = () => {
+  const { language } = useLanguage();
+
   return (
     <section id="projects" className="mt-5">
-      <Title title="Projects" />
+      <Title title={language === "US" ? "Projects" : "Projetos pessoais"} />
       <Row className="g-4 justify-content-center">
         <Col md={6}>
           <ProjectCard

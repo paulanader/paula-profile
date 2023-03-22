@@ -11,11 +11,14 @@ import FigmaImg from "../../assets/figma.png";
 import { Title } from "../Title";
 import { PillCard } from "../PillCard";
 import { Col, Row } from "react-bootstrap";
+import { useLanguage } from "../../hooks/LanguageProvider";
 
 export const Tecnologies = () => {
+  const { language } = useLanguage();
+
   return (
     <section id="tecnologies" className="mt-5">
-      <Title title="Tecnologies" />
+      <Title title={language === "US" ? "Tecnologies" : "Tecnologias"} />
       <h3 className="d-flex justify-content-center mb-5">Front-end</h3>
       <Row
         xs={1}
@@ -45,7 +48,9 @@ export const Tecnologies = () => {
           <PillCard image={JestImg} title="Jest" />
         </Col>
       </Row>
-      <h3 className="d-flex justify-content-center mb-5">Outros</h3>
+      <h3 className="d-flex justify-content-center mb-5">
+        {language === "US" ? "Others" : "Outros"}
+      </h3>
       <Row
         xs={1}
         md={2}
