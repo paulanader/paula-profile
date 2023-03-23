@@ -71,8 +71,8 @@ export const Header: React.FC = () => {
                 </List>
               </div>
               <div className="d-flex align-items-center">
-                <CountryButton country={"BR"} changeLanguage={getLanguage} />
                 <CountryButton country={"US"} changeLanguage={getLanguage} />
+                <CountryButton country={"BR"} changeLanguage={getLanguage} />
               </div>
             </div>
           </div>

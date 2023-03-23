@@ -4,7 +4,6 @@ import ExperienceCard from "../ExperienceCard";
 import TimelineCard from "../TimelineCard";
 import { Border, Dots } from "./styles";
 import { useLanguage } from "../../hooks/LanguageProvider";
-import { BiDotsVerticalRounded } from "react-icons/bi";
 
 export const Experience = () => {
   const { language } = useLanguage();
