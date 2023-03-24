@@ -23,6 +23,11 @@ export const SubTitle = styled.h1`
   font-size: 4rem;
   font-weight: 900;
   color: white;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
 `;
 
 export const Span = styled.p`

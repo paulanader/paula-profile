@@ -29,10 +29,12 @@ const PerfilCard = () => {
           <br /> developer
         </SubTitle>
       ) : (
-        <SubTitle className="d-flex text-center align-self-center">
-          Desenvolvedora
-          <br /> front-end
-        </SubTitle>
+        <div className="d-flex h-100 align-items-center justify-content-center text-center w-100">
+          <SubTitle className="text-center">
+            Desenvolvedora
+            <br /> front-end
+          </SubTitle>
+        </div>
       )}
       <div className="mt-auto mb-3">
         <Span>Florianópolis, Santa Catarina, {country}</Span>
