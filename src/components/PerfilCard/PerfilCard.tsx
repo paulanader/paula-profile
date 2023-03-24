@@ -24,10 +24,12 @@ const PerfilCard = () => {
         <UnderLine />
       </div>
       {language === "US" ? (
-        <SubTitle className="d-flex text-center align-self-center">
-          Front-end
-          <br /> developer
-        </SubTitle>
+        <div className="d-flex h-100 align-items-center justify-content-center text-center w-100">
+          <SubTitle className="d-flex text-center align-self-center">
+            Front-end
+            <br /> developer
+          </SubTitle>
+        </div>
       ) : (
         <div className="d-flex h-100 align-items-center justify-content-center text-center w-100">
           <SubTitle className="text-center">

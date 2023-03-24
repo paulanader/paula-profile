@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <Container>
+      <Container className="nav-header">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <button
@@ -26,13 +26,13 @@ export const Header: React.FC = () => {
               <AiOutlineMenu />
             </button>
             <div
-              className="collapse navbar-collapse justify-content-between align-items-center"
+              className="collapse navbar-collapse justify-content-lg-between align-items-center"
               id="navbarNav"
             >
-              <div className="d-none d-md-flex align-items-center">
+              <div className="d-none d-lg-flex align-items-center">
                 <Logo />
               </div>
-              <div className="d-md-flex aling-items-center">
+              <div className="d-lg-flex aling-items-center">
                 <List className="navbar-nav d-flex aling-items-center">
                   <Navbar
                     value={language === "US" ? "Home" : "Início"}
@@ -70,13 +70,17 @@ export const Header: React.FC = () => {
                   />
                 </List>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="d-none d-lg-flex align-items-center">
                 <CountryButton country={"US"} changeLanguage={getLanguage} />
                 <CountryButton country={"BR"} changeLanguage={getLanguage} />
               </div>
             </div>
           </div>
         </nav>
+        <div className="d-flex d-lg-none align-items-center">
+          <CountryButton country={"US"} changeLanguage={getLanguage} />
+          <CountryButton country={"BR"} changeLanguage={getLanguage} />
+        </div>
       </Container>
     </HeaderContainer>
   );

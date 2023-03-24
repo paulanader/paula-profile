@@ -34,4 +34,11 @@ export const GlobalStyle = createGlobalStyle`
         cursor: not-allowed;
     }
     .cursor-pointer { cursor: pointer; }
+
+    .nav-header {
+        @media (max-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 `;
