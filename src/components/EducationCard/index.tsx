@@ -21,7 +21,7 @@ export const EducationCard: React.FC<EducationCardProps> = ({
         <div className="col mt-2 ms-2">
           <SchoolStyle>{school}</SchoolStyle>
           <p>{course}</p>
-          <p>{date}</p>
+          <p className="d-lg-none">{date}</p>
           <p>{project}</p>
         </div>
         <Cover className="col" style={{ backgroundImage: `url(${image})` }} />

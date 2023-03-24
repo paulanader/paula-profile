@@ -23,6 +23,7 @@ export const Border = styled(Col)`
 
   @media (max-width: 991px) {
     border-left: 3px solid var(--color-purple);
+    padding-left: 30px;
     position: relative;
     padding-left: 10px;
     &:after {

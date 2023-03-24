@@ -18,11 +18,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <Card.Body>
         <div className="d-flex align-itens-center justify-content-between">
           <Card.Title>{title}</Card.Title>
-          <Card.Subtitle className="d-lg-none d-flex justify-content-end mb-3">
-            {period}
-          </Card.Subtitle>
         </div>
         <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
+        <Card.Subtitle className="d-lg-none  mb-3">{period}</Card.Subtitle>
 
         <Card.Text>{text}</Card.Text>
       </Card.Body>
