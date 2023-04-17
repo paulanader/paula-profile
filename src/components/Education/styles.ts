@@ -27,8 +27,9 @@ export const Border = styled(Col)`
     padding-left: 10px;
     &:after {
       content: "";
-      display: block;
+
       width: 10px;
+      display: block;
       height: 10px;
       background-color: var(--color-purple);
       border-radius: 50%;
