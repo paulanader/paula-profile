@@ -35,7 +35,7 @@ export const Education = () => {
             }
             course={
               language === "US"
-                ? "Mester degree in Mechanical engineer"
+                ? "Master degree in Mechanical engineer"
                 : "Mestrado em Engenharia Mecânica"
             }
             date={
